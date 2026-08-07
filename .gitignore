@@ -3,3 +3,69 @@
 .history/
 *.code-workspace
 *.env
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# =========================
+# Next.js
+# =========================
+.next/
+out/
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+build/
+
+# =========================
+# Playwright
+# =========================
+playwright-report/
+test-results/
+
+# =========================
+# Coverage
+# =========================
+coverage/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
