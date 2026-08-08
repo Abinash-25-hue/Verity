@@ -1,21 +1,20 @@
-*.log
-.vscode
-.history/
-*.code-workspace
-*.env
 # =========================
-# Dependencies
+# BMAD / Cline
 # =========================
-node_modules/
+.cline/
+_bmad/
 
 # =========================
 # Environment Variables
 # =========================
 .env
-.env.local
-.env.development.local
-.env.production.local
-.env.test.local
+.env.*
+*.env
+
+# =========================
+# Node.js Dependencies
+# =========================
+node_modules/
 
 # =========================
 # Next.js
@@ -24,16 +23,16 @@ node_modules/
 out/
 
 # =========================
-# Build Outputs
-# =========================
-dist/
-build/
-
-# =========================
 # Playwright
 # =========================
 playwright-report/
 test-results/
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+build/
 
 # =========================
 # Coverage
@@ -41,14 +40,40 @@ test-results/
 coverage/
 
 # =========================
-# Python
+# Python Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+
+# =========================
+# Python Cache
 # =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-venv/
-.venv/
+*$py.class
+
+# =========================
+# Python Tooling
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Python Build Artifacts
+# =========================
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# =========================
+# Databases (local only)
+# =========================
+*.db
+*.sqlite3
 
 # =========================
 # Logs
@@ -59,10 +84,12 @@ yarn-debug.log*
 pnpm-debug.log*
 
 # =========================
-# IDE
+# IDE / Editor
 # =========================
 .vscode/
 .idea/
+.history/
+*.code-workspace
 
 # =========================
 # OS Files
