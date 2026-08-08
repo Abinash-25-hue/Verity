@@ -1,0 +1,38 @@
+[
+  {
+    "request_id": "REQ-101",
+    "category": "Software License",
+    "item": "GitHub Copilot Enterprise",
+    "amount_usd": 2500,
+    "department": "Engineering",
+    "status": "APPROVED",
+    "reasoning": "Standard developer productivity tooling, within quarterly IT budget."
+  },
+  {
+    "request_id": "REQ-102",
+    "category": "Hardware",
+    "item": "MacBook Pro M3 Max",
+    "amount_usd": 4200,
+    "department": "Design",
+    "status": "APPROVED",
+    "reasoning": "High-compute requirement for 3D rendering; approved with manager sign-off."
+  },
+  {
+    "request_id": "REQ-103",
+    "category": "Travel",
+    "item": "First Class Flight to TechConf",
+    "amount_usd": 3800,
+    "department": "Marketing",
+    "status": "REJECTED",
+    "reasoning": "Violates corporate travel policy section 4.2 (Economy required for domestic)."
+  },
+  {
+    "request_id": "REQ-104",
+    "category": "Vendor",
+    "item": "Third-Party Data Scraping Tool",
+    "amount_usd": 12000,
+    "department": "Sales",
+    "status": "REJECTED",
+    "reasoning": "Failed security compliance audit; high GDPR risk."
+  }
+]
