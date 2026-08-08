@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f7fb;
+  --foreground: #101828;
+  --card: #ffffff;
+  --muted: #667085;
+  --border: #e4e7ec;
+  --brand: #635bff;
+  --brand-dark: #4f46e5;
+  --success: #12b76a;
+  --warning: #f79009;
+  --danger: #f04438;
+  --info: #2e90fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 88% 0%, rgba(99, 91, 255, 0.08), transparent 25rem),
+    radial-gradient(circle at 15% 15%, rgba(46, 144, 250, 0.045), transparent 22rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(99, 91, 255, 0.18);
+}
+
+.verity-grid {
+  background-image:
+    linear-gradient(rgba(16, 24, 40, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 24, 40, 0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.shadow-soft {
+  box-shadow: 0 12px 40px rgba(16, 24, 40, 0.07);
+}
+
+.shadow-card {
+  box-shadow: 0 2px 10px rgba(16, 24, 40, 0.04), 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+
+.animate-in {
+  animation: fadeUp 420ms ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
