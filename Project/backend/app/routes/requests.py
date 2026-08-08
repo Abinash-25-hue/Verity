@@ -13,4 +13,12 @@ def create_request(data: RequestCreate):
         .execute()
     )
 
+    created_request = result.data[0]
+
+    supabase.table("audit_logs").insert({
+        "request_id": created_request["id"],
+        "action": "request_created",
+        "details": f"Request submitted by {created_request['employee_name']}"
+    }).execute()
+
     return result.data

@@ -19,10 +19,14 @@ def generate_brief(request_id: str):
 
     request = request_data.data[0]
 
-    return {
+    brief = {
         "request_id": request_id,
         "summary": f"{request['employee_name']} requested ₹{request['amount']} for {request['request_type']}",
         "risks": "No risks identified",
         "policy_context": "Policy check pending",
         "recommendation": "Approve"
     }
+
+    supabase.table("approval_briefs").insert(brief).execute()
+
+    return brief

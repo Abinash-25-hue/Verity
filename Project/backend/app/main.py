@@ -80,3 +80,17 @@ def reject_request(data: DecisionRequest):
     )
 
     return response.data
+
+@app.get("/api/audit/{request_id}")
+def get_audit_logs(request_id: str):
+
+    response = (
+        supabase
+        .table("audit_logs")
+        .select("*")
+        .eq("request_id", request_id)
+        .order("created_at")
+        .execute()
+    )
+
+    return response.data
